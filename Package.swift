@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "UJET",
-            targets: ["UJETSDK"])
+            targets: ["WrapperUJET"])
     ],
     dependencies: [
          .package(url: "https://github.com/twilio/conversations-ios", from: "1.3.1"),
@@ -23,7 +23,7 @@ let package = Package(
             checksum: "a5af47d42c0ae534e246e6c2d6c1821d1547c53a70b68ed7679c761989f7db35"),
 
         .target(
-            name: "UJETSDK",
+            name: "WrapperUJET",
             dependencies: [
                 "UJET", 
                 .product(name: "TwilioConversationsClient", package: "conversations-ios"), 
