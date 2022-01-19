@@ -20,7 +20,7 @@ let package = Package(
         .binaryTarget(
             name: "UJET",
             url: "https://sdk.ujet.co/ios/0.43.0/UJET.xcframework.zip",
-            checksum: "a5af47d42c0ae534e246e6c2d6c1821d1547c53a70b68ed7679c761989f7db35"),
+            checksum: "24df5d78c9f0a2410f323f7d74a6fb9e7e73d5765161d768a72e87b7568ba3b3"),
 
         .target(
             name: "WrapperUJET",
