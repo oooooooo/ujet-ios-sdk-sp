@@ -9,13 +9,13 @@ let package = Package(
   ],
   products: [
     .library(
-      name: "UJET",
+      name: "UJETKit",
       targets: ["WrapperUJET"]),
     .library(
-      name: "UJETCobrowse",
+      name: "UJETCobrowseKit",
       targets: ["WrapperUJETCobrowse"]),
     .library(
-      name: "UJETCobrowseExtension",
+      name: "UJETCobrowseExtensionKit",
       targets: ["WrapperUJETCobrowseExtension"]),
   ],
   dependencies: [
@@ -25,28 +25,28 @@ let package = Package(
   ],
   targets: [
     .binaryTarget(
-      name: "UJETFoundation",
-      url: "https://sdk.ujet.co/ios/0.46.0/UJETFoundation.xcframework.zip",
-      checksum: "ab9ebefae0ac218bfbf4e5554e5c56bf5d6a0f999c3429426c599e1e76c0cbf6"
+      name: "UJETFoundationKit",
+      url: "https://sdk.ujet.co/ios/0.47.0/UJETFoundationKit.xcframework.zip",
+      checksum: "3fffcbce553237877e5ce1692f92fd69869ff96d74fa585e25783a85a117b452"
     ),
 
     .binaryTarget(
-      name: "UJET",
-      url: "https://sdk.ujet.co/ios/0.46.0/UJET.xcframework.zip",
-      checksum: "4ece575e6aa50d171ab4e10f78c768bf59214faf8671b95327cc024fdbab9254"
+      name: "UJETKit",
+      url: "https://sdk.ujet.co/ios/0.47.0/UJETKit.xcframework.zip",
+      checksum: "d5f630421faba7c2a86e9f059902f7a7b47ab1c49e29b3481a6f0b41439d4ea2"
     ),
 
     .binaryTarget(
-      name: "UJETCobrowse",
-      url: "https://sdk.ujet.co/ios/0.46.0/UJETCobrowse.xcframework.zip",
-      checksum: "cda85a4d55d5758e27561685c49a4c3fd8d34d16bd507d18bde712a2a11a9f3f"
+      name: "UJETCobrowseKit",
+      url: "https://sdk.ujet.co/ios/0.47.0/UJETCobrowseKit.xcframework.zip",
+      checksum: "7279c7ecf881578c472b640a72778485eee292a4fb0ed92029eeb8b071689afd"
     ),
 
     .target(
       name: "WrapperUJET",
       dependencies: [
-        "UJET",
-        "UJETFoundation",
+        "UJETKit",
+        "UJETFoundationKit",
         .product(name: "TwilioConversationsClient", package: "conversations-ios"), 
         .product(name: "TwilioVoice", package: "twilio-voice-ios")
       ]
@@ -55,8 +55,8 @@ let package = Package(
     .target(
       name: "WrapperUJETCobrowse",
       dependencies: [
-        "UJETFoundation",
-        "UJETCobrowse",
+        "UJETFoundationKit",
+        "UJETCobrowseKit",
         .product(name: "CobrowseIO", package: "cobrowse-sdk-ios-binary")
       ]
     ),
