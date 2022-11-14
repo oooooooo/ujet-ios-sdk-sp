@@ -29,38 +29,38 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "UJETFoundationKit",
-      url: "https://sdk.ujet.co/ios/0.50.0/UJETFoundationKit.xcframework.zip",
-      checksum: "9cbe846959f041532447321e4688ef328851058890e2cb4e2f16b699efcbad31"
+      url: "https://sdk.ujet.co/ios/0.50.1/UJETFoundationKit.xcframework.zip",
+      checksum: "bbd7e43494fc5af722f774dcb0e3e95bc00a235937ba6bcc9d77d4c373b7c381"
     ),
 
     .binaryTarget(
       name: "UJETKit",
-      url: "https://sdk.ujet.co/ios/0.50.0/UJETKit.xcframework.zip",
-      checksum: "6c55cd06ccfcd99056979a2bfcfebf1547eda83cbee0eccbdf032c1361b8b5d0"
+      url: "https://sdk.ujet.co/ios/0.50.1/UJETKit.xcframework.zip",
+      checksum: "872713abcc37c11350f4b17a6712065dfa5bd51af26b442f7df0c6c7301ad467"
     ),
 
     .binaryTarget(
       name: "UJETCobrowseKit",
-      url: "https://sdk.ujet.co/ios/0.50.0/UJETCobrowseKit.xcframework.zip",
-      checksum: "97b84407ff02ab6dc81917a5cf0c97a6e207e352387a22aeae98c49ab12d1a98"
+      url: "https://sdk.ujet.co/ios/0.50.1/UJETCobrowseKit.xcframework.zip",
+      checksum: "aa465677ff5b2e593c87d8896790cdc6618cb0e8c71e737796de69f4f6864fe3"
     ),
 
     .binaryTarget(
       name: "UJETChatRedKit",
-      url: "https://sdk.ujet.co/ios/0.50.0/UJETChatRedKit.xcframework.zip",
-      checksum: "3faeb785281abeecad368373642b217f2307ed0daceaf6f2ecfb8de21bed4c56"
+      url: "https://sdk.ujet.co/ios/0.50.1/UJETChatRedKit.xcframework.zip",
+      checksum: "131ee909172aee40fa4aef8b22ec5939d17a4ee2c2ebc564519e4ca38f69ce9b"
     ),
 
     .binaryTarget(
       name: "UJETChatBlueKit",
-      url: "https://sdk.ujet.co/ios/0.50.0/UJETChatBlueKit.xcframework.zip",
-      checksum: "be46c879e0f474a86054260dbc40a688bbb2461b081a80e743e10e578c54671c"
+      url: "https://sdk.ujet.co/ios/0.50.1/UJETChatBlueKit.xcframework.zip",
+      checksum: "1e65398d950f3c3b204578922d40b129e9d0e05ac8716ab73819130028bbd869"
     ),
 
     .binaryTarget(
       name: "UJETCallRedKit",
-      url: "https://sdk.ujet.co/ios/0.50.0/UJETCallRedKit.xcframework.zip",
-      checksum: "02575763c04d060b4bd27ef6eebd0b4ea90a5294781597677b9eb7fabf852558"
+      url: "https://sdk.ujet.co/ios/0.50.1/UJETCallRedKit.xcframework.zip",
+      checksum: "8bac7bb5737fec9e11e9b6f22f37c1f7d24562e60f59ce086779f2f7ce0a0871"
     ),
 
     .target(
