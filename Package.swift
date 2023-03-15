@@ -17,50 +17,40 @@ let package = Package(
     .library(
       name: "UJETCobrowseExtensionKit",
       targets: ["WrapperUJETCobrowseExtension"]),
-    .library(
-      name: "UJETChatBlueKit",
-      targets: ["WrapperUJETChatBlue"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/twilio/conversations-ios", .exact("2.2.5")),
-    .package(url: "https://github.com/twilio/twilio-voice-ios", .exact("6.4.2")),
-    .package(url: "https://github.com/cobrowseio/cobrowse-sdk-ios-binary", .exact("2.21.2")),
+    .package(url: "https://github.com/twilio/conversations-ios", .exact("2.2.7")),
+    .package(url: "https://github.com/twilio/twilio-voice-ios", .exact("6.5.0")),
+    .package(url: "https://github.com/cobrowseio/cobrowse-sdk-ios-binary", .exact("2.23.4")),
   ],
   targets: [
     .binaryTarget(
       name: "UJETFoundationKit",
-      url: "https://sdk.ujet.co/ios/0.50.1/UJETFoundationKit.xcframework.zip",
-      checksum: "bbd7e43494fc5af722f774dcb0e3e95bc00a235937ba6bcc9d77d4c373b7c381"
+      url: "https://sdk.ujet.co/ios/2.0.0/UJETFoundationKit.xcframework.zip",
+      checksum: "2af591d707ed955fa24e355db47e94c65e3e3fb55ea575e1b7c03ab023cb4461"
     ),
 
     .binaryTarget(
       name: "UJETKit",
-      url: "https://sdk.ujet.co/ios/0.50.1/UJETKit.xcframework.zip",
-      checksum: "872713abcc37c11350f4b17a6712065dfa5bd51af26b442f7df0c6c7301ad467"
+      url: "https://sdk.ujet.co/ios/2.0.0/UJETKit.xcframework.zip",
+      checksum: "c225a3a82610c7062a5558c9b98b6442dfca8b5f1416b8ff5a8485882cf2e143"
     ),
 
     .binaryTarget(
       name: "UJETCobrowseKit",
-      url: "https://sdk.ujet.co/ios/0.50.1/UJETCobrowseKit.xcframework.zip",
-      checksum: "aa465677ff5b2e593c87d8896790cdc6618cb0e8c71e737796de69f4f6864fe3"
+      url: "https://sdk.ujet.co/ios/2.0.0/UJETCobrowseKit.xcframework.zip",
+      checksum: "904b69c7e097bb25d5e3ba7eb1715be08b45bd3f2754cfecbfadafe7158447b1"
     ),
 
     .binaryTarget(
       name: "UJETChatRedKit",
-      url: "https://sdk.ujet.co/ios/0.50.1/UJETChatRedKit.xcframework.zip",
-      checksum: "131ee909172aee40fa4aef8b22ec5939d17a4ee2c2ebc564519e4ca38f69ce9b"
+      url: "https://sdk.ujet.co/ios/2.0.0/UJETChatRedKit.xcframework.zip",
+      checksum: "a5f293ff3a556294643c182adad1a726d897ae28f7967f1012c1004a26f629e0"
     ),
-
-    .binaryTarget(
-      name: "UJETChatBlueKit",
-      url: "https://sdk.ujet.co/ios/0.50.1/UJETChatBlueKit.xcframework.zip",
-      checksum: "1e65398d950f3c3b204578922d40b129e9d0e05ac8716ab73819130028bbd869"
-    ),
-
     .binaryTarget(
       name: "UJETCallRedKit",
-      url: "https://sdk.ujet.co/ios/0.50.1/UJETCallRedKit.xcframework.zip",
-      checksum: "8bac7bb5737fec9e11e9b6f22f37c1f7d24562e60f59ce086779f2f7ce0a0871"
+      url: "https://sdk.ujet.co/ios/2.0.0/UJETCallRedKit.xcframework.zip",
+      checksum: "66e9d6968dfb7e74bdf5d7e1846ee435a36cd6c4440eef7f862d230383d54588"
     ),
 
     .target(
@@ -96,15 +86,6 @@ let package = Package(
         .product(name: "TwilioConversationsClient", package: "conversations-ios"),
       ]
     ),
-
-    .target(
-      name: "WrapperUJETChatBlue",
-      dependencies: [
-        "UJETFoundationKit",
-        "UJETChatBlueKit",
-      ]
-    ),
-
     .target(
       name: "WrapperUJETCallRed",
       dependencies: [
