@@ -20,37 +20,37 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/twilio/conversations-ios", .exact("4.0.2")),
-    .package(url: "https://github.com/twilio/twilio-voice-ios", .exact("6.10.2")),
+    .package(url: "https://github.com/twilio/twilio-voice-ios", .exact("6.10.4")),
     .package(url: "https://github.com/cobrowseio/cobrowse-sdk-ios-binary", .exact("2.29.6")),
   ],
   targets: [
     .binaryTarget(
       name: "UJETFoundationKit",
-      url: "https://sdk.ujet.co/ios/2.6.0/UJETFoundationKit.xcframework.zip",
-      checksum: "0965e50d22d94883d3d11eef8485bdcdd77b8238050dc5b9939ddcfc86787956"
+      url: "https://sdk.ujet.co/ios/2.7.0/UJETFoundationKit.xcframework.zip",
+      checksum: "d145ad31dc669503c093c72da564a09f7c77042f43a74d2545b8bdf76c6e14f0"
     ),
 
     .binaryTarget(
       name: "UJETKit",
-      url: "https://sdk.ujet.co/ios/2.6.0/UJETKit.xcframework.zip",
-      checksum: "361df5f77c3f6aa700b9e838ebc5403930d2a63c4bf8f7cb1742b23daf915319"
+      url: "https://sdk.ujet.co/ios/2.7.0/UJETKit.xcframework.zip",
+      checksum: "83a9e2e3dd52561c552991079f9099160faf436b0d4f9db6cb38b66581661af4"
     ),
 
     .binaryTarget(
       name: "UJETCobrowseKit",
-      url: "https://sdk.ujet.co/ios/2.6.0/UJETCobrowseKit.xcframework.zip",
-      checksum: "e72d3d2de67e060bccb784edc271f0017e8dba75719ff8322092cb2487313e4b"
+      url: "https://sdk.ujet.co/ios/2.7.0/UJETCobrowseKit.xcframework.zip",
+      checksum: "7bbb37ae39da42327d3dea82bc3d9f2567f541b0847d780efd718d7ba1cfd24d"
     ),
 
     .binaryTarget(
       name: "UJETChatRedKit",
-      url: "https://sdk.ujet.co/ios/2.6.0/UJETChatRedKit.xcframework.zip",
-      checksum: "5101aca357b6e5c07685fa1a98d4d1c5273ee2ecfaeb32e17732e591fa298465"
+      url: "https://sdk.ujet.co/ios/2.7.0/UJETChatRedKit.xcframework.zip",
+      checksum: "ce5820048ccdf863851f1f154943bd4e649029a9ab2c79f540331339a51a7bff"
     ),
     .binaryTarget(
       name: "UJETCallRedKit",
-      url: "https://sdk.ujet.co/ios/2.6.0/UJETCallRedKit.xcframework.zip",
-      checksum: "d887e0fb7fe472fdb8a575cb143bb29d77301e87ebe125ecded4c423a6d74231"
+      url: "https://sdk.ujet.co/ios/2.7.0/UJETCallRedKit.xcframework.zip",
+      checksum: "82ccebdb0bb03509c3bd77d874b2eadd3cb7dabbc68e4e45c251c5ddc51a4b5a"
     ),
 
     .target(
