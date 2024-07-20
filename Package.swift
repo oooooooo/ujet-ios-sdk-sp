@@ -83,7 +83,7 @@ let package = Package(
       dependencies: [
         "UJETFoundationKit",
         "UJETChatRedKit",
-        .product(name: "TwilioConversationsClient", package: "conversations-ios"),
+        .product(name: "TwilioConversationsClient", package: "conversations-ios")
       ]
     ),
     .target(
